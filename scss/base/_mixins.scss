@@ -1,0 +1,49 @@
+@mixin mobile-tablet {
+    @media screen and (max-width:1024px) {
+        @content
+    }
+}
+
+@mixin min-600 {
+    @media screen and (min-width:600px) {
+        @content
+    }
+}
+
+@mixin min-768 {
+    @media screen and (min-width:768px) {
+        @content
+    }
+}
+
+@mixin max-768 {
+    @media screen and (max-width:768px) {
+        @content
+    }
+}
+
+@mixin max-1200 {
+    @media screen and (max-width:1200px) {
+        @content
+    }
+}
+
+@mixin min-1920 {
+    @media screen and (min-width:1920px) {
+        @content
+    }
+}
+
+@mixin bgcolor-h1 {
+    background-color: rgba(0,0,0,0.47);
+    border-radius: 10px
+}
+
+@mixin bienvenidas {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+}

@@ -1,0 +1,19 @@
+$font-h1: 3rem;
+$font-h2: 2.6rem;
+$font-p: 1.49rem;
+$line-p: 1.9rem;
+
+// Variables para 1920 y superiores
+// Pongo diferentes tamaños, porque aunque sea en rem, se quedan medios cortos los tamaños de la fuente
+// en resoluciones grandes.
+
+$font-1920-h1: 4.5rem;
+$font-1920-h2: 3rem;
+
+// Colores. Lo voy a hacer con maps para demostrar el conocimiento de uso del mismo
+
+$colors: (
+    primary-color: #2D261F,
+    secondary-color: #b9b2b0,
+    tertiary-color: #3a322c
+)

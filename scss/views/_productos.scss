@@ -1,0 +1,80 @@
+.bienvenida-productos {
+    @include bienvenidas;
+    background-image: url(../Img/background2.jpg);
+    h1 {
+        font-family: 'Comfortaa', cursive;
+        font-size: $font-h1;
+        color: white;
+        @include min-1920 {
+            font-size: $font-1920-h1;
+        }
+        @include bgcolor-h1
+    }
+}
+
+.productos__article {
+    section {
+        img {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            width: 450px;
+            @include mobile-tablet {
+                width: 300px;
+                height: auto;
+            }
+            @extend .iframe--anim;
+        }
+        .productos__titulo {
+            margin-bottom: 0;
+            text-align: center; 
+            padding-top: 50px;
+            cursor: default;
+            transition: all 0.3s ease;
+            font-size: $font-h2;
+            @include min-1920 {
+                font-size: $font-1920-h2;
+            }
+        }
+    }
+
+    .producto2,
+    .producto4 {
+        p {
+            font-weight: bold;
+        }
+        h3,
+        p {
+            color: map-get($colors, primary-color)
+        }
+    }
+
+    .producto1:hover h3,
+    .producto3:hover h3 {
+        text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.82);
+    }
+
+    .producto2:hover h3,
+    .producto4:hover h3 {
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.82);
+    }
+
+    .imgproducto1y3,
+    .producto2 img,
+    .producto4 img {
+        border-radius: 5%;
+        box-shadow: 0px 0px 50px 7px rgba(0,0,0,0.37)
+    }
+
+    .productos--bgcolor1 {
+        background-color: map-get($colors, primary-color);
+    }
+
+    .productos--bgcolor2 {
+        background-color: map-get($colors, secondary-color);
+    }
+
+    .boton-sucursales {
+        background-color: map-get($colors, primary-color);
+    }
+    
+}

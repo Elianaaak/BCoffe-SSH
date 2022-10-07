@@ -1,0 +1,33 @@
+.bienvenida-contacto {
+    @include bienvenidas;
+    background-image: url(../Img/background4.jpg);
+    h1 {
+        font-family: 'Comfortaa', cursive;
+        font-size: $font-h1;
+        color: white;
+        @include min-1920 {
+            font-size: $font-1920-h1;
+        }
+        @include bgcolor-h1
+
+    }
+}
+
+.contacto-bgcolor {
+    background-color: map-get($colors, primary-color);
+    p {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-family: 'Bad Script', cursive;
+        font-size: $font-p;
+    }
+    h2 {
+        text-align: center; 
+        padding-top: 40px;
+        font-size: $font-h2;
+        @include min-1920 {
+            font-size: $font-1920-h2;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.bienvenida-sucursales {
+    @include bienvenidas;
+    background-image: url(../Img/background3.jpg);
+    h1 {
+        font-family: 'Comfortaa', cursive;
+        font-size: $font-h1;
+        color: white;
+        @include min-1920 {
+            font-size: $font-1920-h1;
+        }
+        @include bgcolor-h1
+    }
+}
+
+.ubicaciones {
+    .mapa-bgcolor1 {
+        background-color:map-get($colors, primary-color);
+    }
+    
+    .mapa-bgcolor2 {
+        background-color:map-get($colors, secondary-color);
+        h2 {
+            color: map-get($colors, primary-color);
+        }
+        p {
+            color: map-get($colors, primary-color);
+        }
+    }
+    iframe {
+        border-radius: 4%;
+        box-shadow: 0px 0px 50px 7px rgba(0,0,0,0.37);
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 0;
+        width: 500px;
+        height: 500px;
+        @include mobile-tablet {
+            width: 300px;
+            height: 300px;
+        }
+        @include min-600 {
+            height: 400px;
+            width: 400px;
+        }
+        @include min-1920 {
+            width: 560px;
+            height: 560px;
+        }
+    }
+    p {
+        font-size: $font-p;
+    }
+    div {
+        h2 {
+            font-size: $font-h2;
+            @include min-1920 {
+                font-size: $font-1920-h2;
+            }
+        }
+    }
+}

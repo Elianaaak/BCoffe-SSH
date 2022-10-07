@@ -1,0 +1,42 @@
+header {
+    background-color: map-get($colors, tertiary-color);
+    grid-area: header;
+    position: sticky; 
+    top: 0;
+    z-index: 3000;
+
+}
+
+nav {
+    ul {
+        li {
+            a{
+                color: rgb(160, 160, 160) !important;
+                font-family: 'Amatic SC', cursive;
+
+            }
+        }
+    }
+    .navbar-brand {
+        img {
+            height: 75px;
+            @include min-1920 {
+                height: 115px;
+                width: 115px;
+            }
+        }
+    }
+    .custom-active {
+        color: #ffffff !important;
+        text-decoration: underline !important;
+    }
+    .nav-link-hover:hover {
+        color: rgb(216, 216, 216) !important;
+        text-decoration: underline !important;
+    }
+    .nav-link {
+        @include min-1920 {
+            font-size: 1.3rem;
+        }
+    }
+}

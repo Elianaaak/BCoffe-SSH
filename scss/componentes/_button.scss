@@ -1,0 +1,30 @@
+.boton {
+    text-align: center;
+    grid-area: boton;
+    button {
+        background-color: rgba(250, 248, 248, 0);
+        border-style: solid;
+        border-width: 4px;
+        height: 60px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-color: map-get($colors, secondary-color); 
+        color: map-get($colors, secondary-color);
+        font-family: 'Comfortaa', cursive;
+        font-size: 1.1rem;
+        transition: all 0.35s ease;
+        &:hover {
+            background-color: map-get($colors, secondary-color);
+            border-color: map-get($colors, secondary-color); 
+            color: rgb(0, 0, 0);
+            transition: all 0.35s ease;
+        }
+    }
+}
+
+.boton2 {
+    @extend .boton;
+    padding-top: 80px;
+    margin-top: 0;
+    padding-bottom: 80px;
+}
